@@ -10,11 +10,13 @@ import net.dv8tion.jda.api.requests.GatewayIntent;
 import net.dv8tion.jda.api.utils.Compression;
 import net.dv8tion.jda.api.utils.cache.CacheFlag;
 import net.gossensei.rem.commands.WarnCommand;
+import net.gossensei.rem.console.Console;
 import net.gossensei.rem.util.command.CommandManager;
 import net.gossensei.rem.util.command.struct.Command;
 import net.gossensei.rem.configuration.ConfigurationServices;
 
 import javax.security.auth.login.LoginException;
+import java.io.IOException;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
@@ -27,8 +29,9 @@ public class Rem {
     private JDA jda;
     public Map<String, Command> commandMap = new HashMap<>();
 
-    public static void main(String[] args) throws LoginException, InterruptedException {
+    public static void main(String[] args) throws LoginException, InterruptedException, IOException {
         new Rem().setup();
+        new Console().setup(getInstance().jda);
     }
 
     public void setup() throws LoginException, InterruptedException {

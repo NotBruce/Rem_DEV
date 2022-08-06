@@ -24,7 +24,7 @@ public class WarnCommand implements Command {
 
     @Override
     public Permission getPermission() {
-        return Permission.ADMINISTRATOR;
+        return Permission.VOICE_MUTE_OTHERS;
     }
 
     @Override
