@@ -1,4 +1,4 @@
-<img src="https://github.com/NotBruce/Rem_DEV/blob/master/RemCmds.png"/>
+<img src="https://github.com/NotBruce/Rem_DEV/blob/master/RemCommands.png"/>
 
 **REM [Development]**
 * Rem is a discord bot that interacts with the Bungie.API to get data about users, like raid completions etc.
